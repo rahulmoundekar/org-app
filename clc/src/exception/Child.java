@@ -1,13 +1,12 @@
 package exception;
 
-import java.io.FileNotFoundException;
-import java.io.IOException;
-
 public class Child extends Parent {
+
+	int i = 10;
 
 	@Override
 	public void m1() {
-
+		// Do nothing because of X and Y.
 	}
 
 	public static void main(String[] args) {

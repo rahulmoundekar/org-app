@@ -1,7 +1,7 @@
 package exception;
 
 class PrintStackTrace {
-	public void m1() throws Exception {
+	public void m1() {
 		m2();
 		System.out.println("m1");
 	}
@@ -15,14 +15,14 @@ class PrintStackTrace {
 		try {
 			m4();
 		} catch (Exception e) {
-			//e.printStackTrace();
 			System.out.println(e.getMessage());
 		}
 		System.out.println("m3");
 	}
 
-	public void m4() throws Exception {
-		int c = 10 / 0;
+	public void m4() {
+		int c = 10 / 2;
+		System.out.println(c);
 		System.out.println("m4");
 	}
 

@@ -3,17 +3,13 @@ package com.app.service.impl;
 import java.util.Scanner;
 import com.app.model.Batch;
 import com.app.model.Course;
-import com.app.model.Student;
-import com.app.model.Trainer;
 import com.app.service.ConceptLearningCentreService;
 
 public class ConceptLearningCentreServiceImpl implements ConceptLearningCentreService {
 
+	private String tabFormat = "\t|\t";
 	private Course course = null;
 	private Batch batch = null;
-	private Trainer trainer = null;
-	private Student student = null;
-
 	Scanner sc = new Scanner(System.in);
 
 	@Override
@@ -45,14 +41,13 @@ public class ConceptLearningCentreServiceImpl implements ConceptLearningCentreSe
 
 	@Override
 	public void addTrainer() {
-		// TODO Auto-generated method stub
+		// Do nothing because of X and Y.
 
 	}
 
 	@Override
 	public void addStudent() {
-		// TODO Auto-generated method stub
-
+		// Do nothing because of X and Y.
 	}
 
 	@Override
@@ -62,11 +57,12 @@ public class ConceptLearningCentreServiceImpl implements ConceptLearningCentreSe
 
 	@Override
 	public void displayBatch() {
+
 		System.out.println("Batch Id \t|\t Batch Name \t|\t Course Id \t|\t Course Name");
 		if (batch != null && course != null) {
-			Course c=batch.getCourse();
-			System.out.println(batch.getId() + "\t|\t" + batch.getBatchName() + "\t|\t" + c.getId() + "\t|\t"
-					+ c.getName());
+			Course c = batch.getCourse();
+			System.out.println(
+					batch.getId() + tabFormat + batch.getBatchName() + tabFormat + c.getId() + tabFormat + c.getName());
 
 		}
 
@@ -74,13 +70,13 @@ public class ConceptLearningCentreServiceImpl implements ConceptLearningCentreSe
 
 	@Override
 	public void displayTrainer() {
-		// TODO Auto-generated method stub
+		// Do nothing because of X and Y.
 
 	}
 
 	@Override
 	public void displayStudent() {
-		// TODO Auto-generated method stub
+		// Do nothing because of X and Y.
 
 	}
 
